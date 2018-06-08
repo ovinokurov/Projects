@@ -8,8 +8,13 @@ class App extends Component {
     super();
     //Temp place for projects state
     this.state = {
-      projects:[
-        {
+      projects:[]
+    }
+  }
+
+  componentWillMount(){
+    this.setState({projects:[
+      {
         title:'Business Website',
         category:'Web Design'
         },
@@ -21,8 +26,7 @@ class App extends Component {
         title:'Ecommerce Shopping Carts',
         category:'Web Design'
         }
-      ]
-    }
+    ]});
   }
   render() {
     return (
