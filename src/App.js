@@ -6,6 +6,7 @@ import Projects from './Components/Projects';
 class App extends Component {
   constructor(){
     super();
+    //Temp place for projects state
     this.state = {
       projects:[
         {
