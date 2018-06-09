@@ -6,7 +6,7 @@ import './Components/Projects';
 import Projects from './Components/Projects';
 import AddProject from './Components/AddProject';
 import Todos from './Components/Todos';
-
+import {Button} from 'react-bootstrap';
 class App extends Component {
   constructor(){
     super();
@@ -77,6 +77,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Button bsStyle="danger">Hello World Danger</Button>
+    		<Button bsStyle="primary">Hello World Primary</Button>
+    		<Button bsStyle="success">Hello World Success</Button>
+
         <AddProject addProject={this.handleAddProject.bind(this)} />
         <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)} />
         <hr/>
